@@ -35,6 +35,7 @@ jobs:
           script: |
             const fs = require('fs')
             const data = fs.readFileSync('output.md', 'utf8')
+            data = data.replace('csisecurity.com.cn', 'huian.ltd')
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,

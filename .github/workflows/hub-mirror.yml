@@ -38,7 +38,7 @@ jobs:
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
-              repo: context.repo.repo,
+              repo: 'harbor.huian.ltd',
               body: data
             })
       # 5. 当以上步骤成功时，为 issues 添加 success 标签
